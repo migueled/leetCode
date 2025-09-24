@@ -1,20 +1,6 @@
-var fizzBuzz = function(n) {
-let a = [];
-    for (let index = 1; index <= n; index++) {
-        if (index % 3 == 0 && index % 5 == 0) {
-            a.push('FizzBuzz');
-            continue
-        } if (index % 3 == 0) {
-            a.push('Fizz');
-            continue
-        } if (index % 5 == 0) {
-            a.push('Buzz');
-            continue
-        }
-            a.push(index+"");
-        
-    }
-    return a;
+var middleNode = function(head) {
+    let i = head.length;
+    return head.slice(i/2); 
 };
 
-console.log(fizzBuzz(15));
+console.log(middleNode([1,2,3,4,5]));
