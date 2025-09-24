@@ -1,5 +1,5 @@
-var fizzBuzz = function(n) {
-let a = [];
+var fizzBuzz = function (n) {
+    let a = [];
     for (let index = 1; index <= n; index++) {
         if (index % 3 == 0 && index % 5 == 0) {
             a.push('FizzBuzz');
@@ -11,8 +11,7 @@ let a = [];
             a.push('Buzz');
             continue
         }
-            a.push(index+"");
-        
+        a.push(index + "");
     }
     return a;
 };
